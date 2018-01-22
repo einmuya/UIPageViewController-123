@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		803A6D5A2015C6FA00433841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A6D592015C6FA00433841 /* AppDelegate.swift */; };
-		803A6D5C2015C6FA00433841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A6D5B2015C6FA00433841 /* ViewController.swift */; };
 		803A6D5F2015C6FA00433841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803A6D5D2015C6FA00433841 /* Main.storyboard */; };
 		803A6D612015C6FA00433841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803A6D602015C6FA00433841 /* Assets.xcassets */; };
 		803A6D642015C6FA00433841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803A6D622015C6FA00433841 /* LaunchScreen.storyboard */; };
 		803A6D6F2015C6FA00433841 /* UIPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A6D6E2015C6FA00433841 /* UIPageViewControllerTests.swift */; };
+		803A6D7D2015C9C700433841 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A6D7C2015C9C700433841 /* PageViewController.swift */; };
+		803A6D7F2015CFF900433841 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A6D7E2015CFF900433841 /* PageContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		803A6D562015C6FA00433841 /* UIPageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803A6D592015C6FA00433841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		803A6D5B2015C6FA00433841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		803A6D5E2015C6FA00433841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		803A6D602015C6FA00433841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		803A6D632015C6FA00433841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		803A6D6A2015C6FA00433841 /* UIPageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		803A6D6E2015C6FA00433841 /* UIPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewControllerTests.swift; sourceTree = "<group>"; };
 		803A6D702015C6FA00433841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803A6D7C2015C9C700433841 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		803A6D7E2015CFF900433841 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,10 @@
 		803A6D582015C6FA00433841 /* UIPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				803A6D592015C6FA00433841 /* AppDelegate.swift */,
-				803A6D5B2015C6FA00433841 /* ViewController.swift */,
-				803A6D5D2015C6FA00433841 /* Main.storyboard */,
+				803A6D7A2015C71B00433841 /* AppDelegate */,
+				803A6D792015C70E00433841 /* Controllers */,
+				803A6D7B2015C72B00433841 /* Storyboards */,
 				803A6D602015C6FA00433841 /* Assets.xcassets */,
-				803A6D622015C6FA00433841 /* LaunchScreen.storyboard */,
 				803A6D652015C6FA00433841 /* Info.plist */,
 			);
 			path = UIPageViewController;
@@ -94,6 +95,32 @@
 				803A6D702015C6FA00433841 /* Info.plist */,
 			);
 			path = UIPageViewControllerTests;
+			sourceTree = "<group>";
+		};
+		803A6D792015C70E00433841 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				803A6D7C2015C9C700433841 /* PageViewController.swift */,
+				803A6D7E2015CFF900433841 /* PageContentViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		803A6D7A2015C71B00433841 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				803A6D592015C6FA00433841 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		803A6D7B2015C72B00433841 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				803A6D5D2015C6FA00433841 /* Main.storyboard */,
+				803A6D622015C6FA00433841 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803A6D5C2015C6FA00433841 /* ViewController.swift in Sources */,
+				803A6D7F2015CFF900433841 /* PageContentViewController.swift in Sources */,
+				803A6D7D2015C9C700433841 /* PageViewController.swift in Sources */,
 				803A6D5A2015C6FA00433841 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -354,12 +382,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GYL934XVH2;
 				INFOPLIST_FILE = UIPageViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.einmuya.UIPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -368,12 +397,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GYL934XVH2;
 				INFOPLIST_FILE = UIPageViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.einmuya.UIPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
